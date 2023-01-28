@@ -47,7 +47,6 @@ function stopAnimation() {
     step = 0;
 }
 
-
 function getAnimationText() {
     text = getViewer().value;
     return text.split("=====\n");
