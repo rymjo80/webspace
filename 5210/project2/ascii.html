@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="css/ascii.css"/>
+    <script src="js/ascii.js"></script>
+    <script src="js/animations.js"></script>
+</head>
+<body>
+    <div id="frame">
+        <h1>ASCII Animation Viewer</h1>
+<textarea name="viewer" id="animation-viewer" cols="80" rows="20"></textarea>
+<div id="controls">
+        <fieldset><legend>Play Controls:</legend>
+            <button id="start" class="button" onclick="startAnimation()">Start</button>
+            <button id="stop" class="button" onclick="stopAnimation()" disabled>Stop</button>
+        </fieldset>
+   
+<fieldset><legend>Animation:</legend>
+<select id="animation" class="select" onchange="setAnimationText()">
+    <option value="blank">Blank</option>
+    <option value="exercise">Exercise</option>
+    <option value="juggler">Juggler</option>
+    <option value="bike">Bike</option>
+    <option value="dive">Dive</option>
+</select>
+</fieldset>
+
+ 
+<fieldset><legend>Size:</legend>
+    <select id="size" class="select" onchange="changeAnimation()">
+        <option value="7pt">Tiny</option>
+        <option value="10pt">Small</option>
+        <option value="12pt" selected="selected">Medium</option>
+        <option value="16pt">Large</option>
+        <option value="24pt">Extra Large</option>
+        <option value="32pt">XXL</option>
+    </select>
+</fieldset>
+
+<fieldset><legend>Speed:</legend>
+    <label><input type="checkbox" id="turbo" onclick="changeAnimation()">Turbo</label>
+</fieldset>
+
+</div>
+    </div>
+</body>
+</html>

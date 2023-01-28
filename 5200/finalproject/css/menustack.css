@@ -1,0 +1,420 @@
+html,
+body {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-flow: column;
+  flex-direction: column;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+h1,
+h2 {
+  margin: 0;
+  font-weight: lighter;
+}
+
+h3 {
+  color: slateblue;
+}
+
+p {
+  margin: 10px 0;
+}
+
+.scrollable {
+  overflow-y: auto;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.hide {
+  display: none;
+}
+
+.error {
+  text-align: center;
+  color: red;
+}
+
+.success {
+  text-align: center;
+  color: lightgreen;
+}
+
+.flex-one {
+  flex: 1;
+  align-self: flex-start;
+}
+
+.flex-one p a {
+  text-decoration: none;
+}
+
+.flex-three {
+  flex: 3;
+}
+
+.recipe-holder {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.recipe-holder a {
+  text-decoration: none;
+}
+
+.journal {
+  max-height: 800px;
+}
+
+.journal-entry-date {
+  font-style: italic;
+  color: darkgray;
+}
+
+.recipe-card {
+  max-width: 500pt;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  padding: 1em;
+  border: solid thin black;
+  background-color: whitesmoke;
+}
+
+.recipe-card h3 {
+  color: black;
+  text-transform: uppercase;
+}
+
+.recipe-card-header img {
+  width: 300px;
+  height: auto;
+}
+
+.recipe-card-header {
+  flex: 1;
+  width: 100%;
+  height: 1em;
+}
+
+.recipe-card-body {
+  flex: 2;
+}
+
+.card {
+  max-width: 500pt;
+  margin: 10px;
+  padding: 1em;
+  border-radius: 4px;
+  background-color: #fdfdfd;
+  box-shadow: 2px 2px 5px black;
+}
+
+.small-card {
+  max-width: 300px;
+}
+
+.small-card > .recipe-card-header > img {
+  max-width: 100%;
+  height: auto;
+}
+
+.large-card {
+  max-width: 100%;
+}
+
+.today-stack {
+  box-shadow: 0 0 12px 5px slateblue;
+}
+
+.title {
+  color: white;
+  background-color: lightslategray;
+}
+
+#login,
+#create-account-form,
+#welcome {
+  max-width: 50%;
+  padding: 1em;
+  border-radius: 3px;
+  background-color: #fdfdfd;
+  box-shadow: 2px 2px 20px black;
+}
+
+#wrapper {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  min-height: 100%;
+  margin: 0;
+  padding: 10px;
+  z-index: 1;
+}
+
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.stack h1 {
+  margin-right: 20pt;
+}
+
+.stack p {
+  font-size: large;
+  align-self: center;
+}
+
+.stack p a {
+  color: blue;
+}
+
+.stack p a:hover {
+  color: darkblue;
+}
+
+.bkg-welcome {
+  background: 50% 50% url("../images/couple-cooking1920x1280.jpg");
+}
+
+.bkg-dashboard {
+  background: 50% 50% url("../images/covered-cutting-board1920x1920.jpg");
+}
+
+.bkg-login {
+  background: 50% 50% url("../images/flour-splash-background1920x1280.jpg");
+}
+
+.bkg-create-account {
+  background: 50% 50% url("../images/cutting-board1920x1272.jpg");
+}
+
+.bkg-journal {
+  background: 50% 50% url("../images/fruit-right1920x1523.jpg");
+}
+
+.bkg-weekly {
+  background: 50% 50% url("../images/fancy-plate1920x1280.jpg");
+}
+
+.bkg-daily {
+  background: 50% 50% url("../images/spoons1920x1280.jpg");
+}
+
+.bkg-recipes {
+  background: 50% 50% url("../images/counter-top1920x1280.jpg");
+}
+
+.bkg-single-recipe {
+  background: 50% 50% url("../images/counter-two-apples1920x1280.jpg");
+}
+
+.bkg-add-recipe {
+  background: 50% 50% url("../images/kitchen-white1920x1151.jpg");
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.85;
+}
+
+header#banner {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5em;
+  border-bottom: double thick #333;
+  background-color: white;
+}
+
+header#banner .menu a {
+  color: black;
+}
+
+.header-left {
+  padding-left: 1em;
+  align-self: center;
+}
+
+.header-left a {
+  text-decoration: none;
+  color: black;
+}
+
+.header-left p {
+  text-align: center;
+  padding: 1em;
+  border: solid 3px black;
+}
+
+.header-right {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  text-align: right;
+}
+
+.header-welcome {
+  margin-right: 1em;
+}
+
+.menu,
+.header-welcome {
+  flex: 1;
+  list-style: none;
+  margin: 1em 0;
+  padding: 0;
+  text-align: right;
+}
+
+.menu li,
+.header-welcome li {
+  padding: 1em 1em 1em 0;
+  display: inline;
+}
+
+.menu a,
+.header-welcome a {
+  text-decoration: none;
+}
+
+footer {
+  min-height: 20px;
+  display: flex;
+  padding: 0 2em;
+  border-top: double thick #999;
+  background-color: #666666;
+  color: white;
+}
+
+footer a {
+  color: white;
+}
+
+#create-account {
+  text-align: right;
+  color: #999;
+}
+
+#login label,
+#create-account-form label {
+  padding: 10px;
+  width: 77px;
+  text-align: right;
+  float: left;
+  vertical-align: middle;
+}
+
+#create-account-form label {
+  width: 150px;
+}
+
+#create-account-form h1 {
+  text-align: right;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+select,
+textarea {
+  width: 20em;
+  padding: 10px;
+  font-size: medium;
+  border-radius: 5px;
+}
+
+select {
+  appearance: none;
+  border-color: lightgray;
+  box-shadow: inset 2px 2px lightgray;
+}
+
+textarea {
+  height: 10em;
+  width: 95%;
+}
+
+input[type="submit"] {
+  appearance: none;
+  border: solid thin rgb(162, 203, 216);
+  background-color: deepskyblue;
+  color: white;
+  border-radius: 10px;
+  font-size: medium;
+  padding: 1em;
+  cursor: pointer;
+}
+
+.small-input {
+  max-width: 100px;
+}
+
+@media (max-width: 800px) {
+  #login,
+  #welcome,
+  #create-account-form {
+    min-width: 80%;
+    max-width: 90%;
+  }
+
+  #login label,
+  #create-account-form label {
+    width: 100%;
+    text-align: left;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: 90%;
+  }
+
+  #wrapper {
+    flex-direction: column-reverse;
+    background-position: 50% 95%;
+  }
+
+  header#banner {
+    flex-direction: column;
+  }
+
+  .header-right {
+    width: 100%;
+  }
+
+  .flex-one {
+    width: 100%;
+  }
+
+  .flex-one h1 {
+    text-align: center;
+  }
+
+  .recipe-holder {
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}

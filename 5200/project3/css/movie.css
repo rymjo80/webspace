@@ -1,0 +1,118 @@
+/* 
+Ryan Johnson
+CPSC5200
+
+movie.css styles the move.php page.
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 8pt;
+    box-sizing: border-box;
+    background-image: url("../images/background.png");
+}
+
+h1 {
+    font-family: Tahoma, Verdana, sans-serif;
+    font-size: 24pt;
+    text-shadow: 3px 3px #999999;
+    text-align: center;
+}
+
+#top-banner {
+    height: 50px;
+    text-align: center;
+    background-image: url("../images/bannerbg.png");
+}
+
+#main {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 4px #999999;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#general-overview {
+    width: 250px;
+    float: right;
+    font-family: Arial, sans-serif;
+    background-color: #A2B964;
+}
+
+#general-overview dl {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#general-overview dt {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.big-tomato, 
+#main-header #percent {
+    vertical-align: text-bottom;
+}
+
+#main-header {
+    height: 83px;
+    color: red;
+    font-weight: bold;
+    font-size: 48pt;
+    background-image: url("../images/rbg.png");
+}
+
+#reviews {
+    padding: 11px;
+    width: 550px;
+}
+
+#review-count {
+    clear: right;
+    padding: 5px;
+    text-align: center;
+    background-color: #A2B964;
+}
+
+.reviews-left-column, 
+.reviews-right-column {
+    width: 47%;
+    margin-right: 2%;
+    
+}
+
+.reviews-right-column {
+    float:right;
+}
+
+.quote-box {
+    min-height: 25px;
+    padding: 8px;
+    margin: 0;
+    font-weight: bold;
+    background-color: #E8DC9B;
+    border: solid 2px gray;
+    border-radius: 10px;
+}
+
+.quote-box img,
+.reviewer img {
+    float: left;
+    margin-right: 5px;
+}
+
+.reviewer {
+    min-height: 35px;
+    width: 235px;
+    margin-bottom: 20px;
+}
+
+.no-list-style {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}

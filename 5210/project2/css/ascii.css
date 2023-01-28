@@ -1,0 +1,51 @@
+html,
+body {
+  height: auto;
+  width: 100%;
+  font-family: sans-serif;
+  font-size: 14pt;
+  background-color: #ccccff;
+}
+
+h1 {
+  font-size: 32pt;
+  margin: 0;
+}
+
+#frame {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 80%;
+  text-align: center;
+  padding: 2px;
+  margin: auto;
+}
+
+textarea {
+  margin: auto;
+  height: 400px;
+  font: bold 12pt monospace;
+  width: 90%;
+  background-color: white;
+}
+
+#controls {
+  margin: auto;
+}
+
+fieldset {
+  display: inline;
+  vertical-align: top;
+  width: 200px;
+  border: solid 5px black;
+}
+
+fieldset legend {
+  font-weight: bold;
+}
+
+button,
+select {
+  font-size: 14pt;
+}
