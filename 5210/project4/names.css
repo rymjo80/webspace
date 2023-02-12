@@ -1,0 +1,26 @@
+html,
+body {
+  font-size: 12pt;
+  font-family: Georgia, serif;
+}
+
+q {
+  font-style: italic;
+}
+
+#graph td {
+  height: 250px;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+.rankBar {
+  width: 50px;
+  font-weight: bold;
+  background-color: #ffbbbb;
+}
+
+.top10Rank,
+#errors {
+  color: red;
+}
