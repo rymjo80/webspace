@@ -16,6 +16,7 @@ function request(para, func) {
         }
     );
 }
+
 function setNamesList(ajax) {
   let names = ajax.responseText.split("\n");
   names.sort();
